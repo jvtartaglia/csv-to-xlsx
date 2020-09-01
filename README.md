@@ -17,21 +17,21 @@ If you have to present a curation of data or a report that generated many .csv f
 ## Installation
 Clone this repository
 
-'''
+```
 git clone https://github.com/jvtartaglia/csv-xlsx-converter.git
-'''
+```
 
 Copy the 'bulk' file into /usr/local/bin/
 
-'''
+```
 cp ./csv-xlsx-converter/bulk /usr/local/bin/
-'''
+```
 
 Copy the 'bulk_converting.py' file into /usr/local/lib/
 
-'''
+```
 cp ./csv-xlsx-converter/bulk_converting.py /usr/local/lib/
-'''
+```
 
 ## Usage
 
@@ -44,9 +44,9 @@ Call it using the command 'bulk'. It takes 4 arguments in this order:
 
 So the final command would look like:
 
-'''
-bulk <origin_format> <destination_format> <origin_directory> <destination_directoryr>
-'''
+```
+bulk <origin_format> <destination_format> <origin_directory> <destination_directory>
+```
 
 *If the destination directory does not exist it will be created.
 
