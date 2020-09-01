@@ -56,7 +56,7 @@ Here's an example. Let's take a look at the original directory:
 
 <img src="https://i.imgur.com/PMnqXuV.png" width=50% height=50%> 
 
-<br>Let's say I want to convert .csv into .xslx from '~/Documents/csv/' to '~/Documents/xlsx/'.
+<br>Let's say I want to convert .csv into .xslx from '/Documents/csv/' to '/Documents/xlsx/'.
 
 <img src="https://i.imgur.com/8lNTSUw.png" width=100% height=100%>
 
