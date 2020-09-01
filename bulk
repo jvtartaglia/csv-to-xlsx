@@ -1,0 +1,35 @@
+#!/bin/bash
+
+type -P python3 >/dev/null 2>&1
+
+if [ "$?" != "0" ]; then
+	echo -e "\nIt is necessary to install Python 3 to run this command.\n"
+	exit 1
+fi
+
+echo -e "\nPython requirement checked."
+
+python3 -c "import pandas" >/dev/null 2>&1
+
+if [ "$?" != "0" ]; then
+	echo -e "\n'Pandas' module was not found."
+	echo "Do you wish to install it via 'pip'?"
+	select yn in "Yes" "No"; do
+    		case $yn in
+        		Yes ) pip install pandas==1.1.0; break;;
+		        No ) exit;;
+    		esac
+	done
+
+fi
+
+python3 -c "import pandas" >/dev/null 2>&1
+
+if [ "$?" != "0" ]; then
+	echo -e "\nUnable to validate 'Pandas' module requirement. Exiting."
+	exit 1
+fi
+
+python3 /usr/local/lib/bulk_converting.py "$1" "$2" "$3" "$4"
+
+exit $?
