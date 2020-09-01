@@ -24,13 +24,13 @@ git clone https://github.com/jvtartaglia/csv-xlsx-converter.git
 Copy the 'bulk' file into /usr/local/bin/
 
 ```
-cp ./csv-xlsx-converter/bulk /usr/local/bin/
+sudo cp ./csv-xlsx-converter/bulk /usr/local/bin/
 ```
 
 Copy the 'bulk_converting.py' file into /usr/local/lib/
 
 ```
-cp ./csv-xlsx-converter/bulk_converting.py /usr/local/lib/
+sudo cp ./csv-xlsx-converter/bulk_converting.py /usr/local/lib/
 ```
 
 ## Usage
